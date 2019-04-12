@@ -30,7 +30,6 @@ def merge_data(people, info_on_people)
   
   people.each do |person|
     info_on_people[0].each do |person_name, info_on_person|
-      binding.pry
       merged_data << person.merge(info_on_person) if person[:first_name] == person_name
     end
   end
