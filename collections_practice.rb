@@ -31,7 +31,7 @@ def merge_data(people, info_on_people)
   people.each do |person|
     info_on_people[0].each do |info_on_person|
       binding.pry
-      merged_data << person.merge(info_on_person[1]) if person[:first_name] == more_data_info[0]
+      merged_data << person.merge(info_on_person[1]) if person[:first_name] == info_on_person[0]
     end
   end
   
