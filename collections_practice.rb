@@ -25,10 +25,11 @@ def count_elements(array)
   array_with_count.each { |element| element[:count] = array.count(element) }
 end
 
-def merge_data(data, more_data)
+def merge_data(people, more_data)
   merged_data = []
   
-  data.each do |data_info|
+  people.each do |data_info|
+    binding.pry
     more_data[0].each do |more_data_info|
       binding.pry
       merged_data << data_info.merge(more_data_info[1]) if data_info[:first_name] == more_data_info[0]
