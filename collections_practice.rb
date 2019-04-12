@@ -29,7 +29,6 @@ def merge_data(people, more_data)
   merged_data = []
   
   people.each do |person|
-    binding.pry
     more_data[0].each do |more_data_info|
       binding.pry
       merged_data << person.merge(more_data_info[1]) if person[:first_name] == more_data_info[0]
